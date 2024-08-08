@@ -1,11 +1,13 @@
 import streamlit as st
 from googletrans import Translator
+from gtts import gTTS
+import os
 
 # Initialize the translator
 translator = Translator()
 
 # Title of the app
-st.title("Language Translator")
+st.title("Language Translator with Voice")
 
 # User input text
 input_text = st.text_area("Enter text to translate", "")
@@ -38,9 +40,20 @@ if st.button("Translate"):
         translated = translator.translate(input_text, dest=languages[language])
         st.write(f"Translated text in {language}:")
         st.write(translated.text)
+        
+        # Convert translated text to speech
+        tts = gTTS(translated.text, lang=languages[language])
+        tts.save("translated_audio.mp3")
+        
+        # Play the audio
+        audio_file = open("translated_audio.mp3", "rb")
+        audio_bytes = audio_file.read()
+        st.audio(audio_bytes, format="audio/mp3")
+        
+        # Clean up the temporary audio file
+        os.remove("translated_audio.mp3")
     else:
         st.write("Please enter some text to translate.")
 
 # Displaying the translated text
 st.write("\n")
-
