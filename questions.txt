@@ -26,4 +26,4 @@ Generate a report on feedback related to product quality by age group.
 
 Based on feedback scores and demographics, which groups are likely to become detractors?
 
-Predict potential feedback themes for upcoming releases based on current customer feedback.
+Predict potential feedback themes for upcoming releases based on current customer.
