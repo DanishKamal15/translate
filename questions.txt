@@ -1,0 +1,29 @@
+What is the overall Net Promoter Score (NPS) based on feedback scores?
+
+Generate a summary of sentiment by demographic group (e.g., age, region).
+
+Identify the most common themes among feedback from detractors (scores 0-6).
+
+What percentage of responses come from promoters, passives, and detractors in each region?
+
+Summarize feedback themes for customers aged 18-30.
+
+Analyze gender-based differences in feedback scores.
+
+Provide a comparison of average feedback scores across regions.
+
+What specific features or issues are frequently mentioned by detractors?
+
+Summarize suggestions or improvement ideas mentioned by promoters (scores 9-10).
+
+Identify top requests or concerns by region to tailor our regional strategies.
+
+What are common feedback themes related to customer service?
+
+Identify patterns in feedback regarding shipping and delivery.
+
+Generate a report on feedback related to product quality by age group.
+
+Based on feedback scores and demographics, which groups are likely to become detractors?
+
+Predict potential feedback themes for upcoming releases based on current customer feedback.
